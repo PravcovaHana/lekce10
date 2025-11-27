@@ -2,9 +2,16 @@
 
 [@c.page title="Student ${student.celeJmeno}"]
 
-    Třída:  <td><a href="/tridy/${student.trida.id}">${student.trida.nazev}</a>
-
-
+    <table class="table">
+        <tr>
+            <th>Jméno:</th>
+            <td>${student.celeJmeno}</td>
+        </tr>
+        <tr>
+            <th>Třída:</th>
+            <td><a href="/tridy/${student.trida.id}">${student.trida.nazev}</td>
+        </tr>
+    </table>
     <table class="table">
         <thead>
         <tr>

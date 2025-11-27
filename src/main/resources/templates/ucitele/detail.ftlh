@@ -1,7 +1,17 @@
 [#ftl]
 
 [@c.page title="Učitel ${ucitel.celeJmeno}"]
-    [#if ucitel.trida??]
-    <h1>Třída:  <a href="/tridy/${ucitel.trida.id}">${ucitel.trida.nazev}</a></h1>
-    [/#if]
+
+    <table class="table">
+        <tr>
+            <th>Jméno:</th>
+            <td>${ucitel.celeJmeno}</td>
+        </tr>
+        [#if ucitel.trida??]
+            <tr>
+                <th>Třída:</th>
+                <td><a href="/tridy/${ucitel.trida.id}">${ucitel.trida.nazev}</a></td>
+            </tr>
+        [/#if]
+    </table>
 [/@c.page]

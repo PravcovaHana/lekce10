@@ -4,6 +4,10 @@
 
     <table class="table">
         <tr>
+            <th>Jméno:</th>
+            <td>${rodic.celeJmeno}</td>
+        </tr>
+        <tr>
             <th>Email:</th>
             <td>[#if rodic.email??]${rodic.email}[/#if]</td>
         </tr>
